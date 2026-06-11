@@ -28,5 +28,5 @@ gitops/
 - **Deployments**: resource requests/limits, liveness + readiness probes, `HPA` for the backend.
 - **Services**: `ClusterIP`; a single **nginx Ingress** routes `/` → frontend and `/api/*` → backend.
 - **Config**: `ConfigMap` for non-secret settings; **Secrets** via External Secrets Operator
-  backed by AWS Secrets Manager (DB password, Firebase config) — never committed here.
+  backed by AWS Secrets Manager (DB password) — never committed here.
 - **Image tags**: bumped by CI per release (semver), reconciled automatically by ArgoCD.
