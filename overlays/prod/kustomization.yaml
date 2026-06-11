@@ -9,4 +9,3 @@ resources:
 patches:
   - path: backend/replicas.yaml
   - path: frontend/replicas.yaml
-  - path: ingress-host.yaml
