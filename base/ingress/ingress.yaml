@@ -10,8 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: loanhub.example.com
-      http:
+    - http:
         paths:
           - path: /api(/|$)(.*)
             pathType: ImplementationSpecific
