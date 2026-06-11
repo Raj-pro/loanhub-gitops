@@ -31,17 +31,15 @@ spec:
               cpu: 500m
               memory: 1Gi
           livenessProbe:
-            httpGet:
-              path: /api/actuator/health/liveness
+            tcpSocket:
               port: 8080
             initialDelaySeconds: 60
             periodSeconds: 15
             failureThreshold: 3
           readinessProbe:
-            httpGet:
-              path: /api/actuator/health/readiness
+            tcpSocket:
               port: 8080
-            initialDelaySeconds: 30
+            initialDelaySeconds: 45
             periodSeconds: 10
             failureThreshold: 3
       terminationGracePeriodSeconds: 60
