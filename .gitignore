@@ -1,0 +1,6 @@
+.DS_Store
+*.log
+
+# Never commit rendered secrets. Use SealedSecrets / External Secrets instead.
+*-secret.yaml
+secret.yaml
