@@ -9,3 +9,12 @@ resources:
 patches:
   - path: backend/replicas.yaml
   - path: frontend/replicas.yaml
+
+
+images:
+  - name: loanhub-backend
+    newName: 612069931326.dkr.ecr.ap-south-1.amazonaws.com/loanhub-backend
+    newTag: latest
+  - name: loanhub-frontend
+    newName: 612069931326.dkr.ecr.ap-south-1.amazonaws.com/loanhub-frontend
+    newTag: latest
